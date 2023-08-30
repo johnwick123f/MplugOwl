@@ -29,7 +29,7 @@ def load_video(path, num_frames=4):
         images_group.append(img)
     return images_group
 
-class MplugOwlProcessor(ProcessorMixin):
+class VideoMplugOwlProcessor(ProcessorMixin):
     attributes = []
     tokenizer_class = ("MplugOwlTokenizer")
     
@@ -96,7 +96,7 @@ class MplugOwlProcessor(ProcessorMixin):
         return self.tokenizer.decode(*args, skip_special_tokens=skip_special_tokens, **kwargs)
 
 
-class MplugOwlImageProcessor(CLIPImageProcessor):
+class VideoMplugOwlImageProcessor(CLIPImageProcessor):
     pass
 
 
