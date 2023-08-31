@@ -1,4 +1,3 @@
-transformers==4.28.1
 einops
 icecream
 flask
@@ -17,5 +16,6 @@ opencv-python
 decord
 chardet
 cchardet
+git+https://github.com/huggingface/transformers.git
 git+https://github.com/huggingface/accelerate.git
 bitsandbytes
